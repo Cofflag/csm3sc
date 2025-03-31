@@ -10,7 +10,7 @@ where `in.bin` is the script binary to disassemble, and `out.txt` is the result.
 `asm.py <in.txt> <opcodes.yaml> <tbl.txt> <out.bin>`
 where `in.txt` is the script text to assemble, and `out.bin` is the result.
 
-`opcodes.yaml` and `tbl.txt` is provided in the repo, and they need improvment.
+`opcodes.yaml` and `tbl.txt` are provided in the repo, and they need improvment.
 
 ## op.yaml
 
@@ -18,7 +18,7 @@ This is the definition of the csm3 script's opcode.
 
 `unkxxxx` needs documentation.
 
-if you find out the usage of any unknown opcode, please add it to the yaml file and send a pull request. Thank you.
+If you find out the usage of any unknown opcode, please add it to the yaml file and send a pull request. Thank you.
 
 ## tbl.txt
 
@@ -26,7 +26,7 @@ This is the char table of csm3's Chinese version.
 
 If you are using the Japanese version, replace it with shift-jis char table.
 
-The table isn't complete, because I didn't reverse the glyph drawing functions of the game. This table is modified from sjis.
+The table isn't complete, because I haven't reversed the glyph drawing functions of the game. This table is modified from sjis.
 
 If you find out wrong chars or you can provide a better table, please sent a pull request.
 
