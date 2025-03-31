@@ -1122,10 +1122,10 @@ opcodes:
     - type: expr
     - type: expr
   '0x047D':
-    name: unk047d
+    name: setdialogname # 设置对话框上显示的名字
     parameters:
-    - type: expr
-    - type: expr
+    - type: expr # 设置左/右侧
+    - type: expr # 名字id
   '0x047E':
     name: unk047e
     parameters:

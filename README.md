@@ -14,7 +14,7 @@ where `in.txt` is the script text to assemble, and `out.bin` is the result.
 
 `opcodes.yaml` and `tbl.txt` are provided in the repo, and they need improvment.
 
-`unlzsc.bin` ,`974.bin` and `974.txt` are provided as examples.
+`unlzsc974.bin` ,`974.bin` and `974.txt` are provided as examples.
 
 ## op.yaml
 
