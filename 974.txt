@@ -1,0 +1,268 @@
+
+
+@label_0:
+setvar 2, 481, 0
+unk0408 1
+unk0410 0, 334, 335, 65535
+unk0410 1, 334, 336, 338
+unk0410 2, 334, 337, 65535
+unk0411 
+unk0430 339
+unk0412 4, 1
+unk0418 2
+setvar 2, 459, 1
+setvar 2, 456, 0
+unk046c 0
+placetxt 'Â³ÒÁ×È´å Ãñ¼Ò£Â '
+unk040c 1, @label_474
+unk040c 2, @label_448
+jumpz @label_240, (s8)gUnk_030067A8[43] == 0 && (s8)gUnk_030067A8[48] == 1
+call @label_2422
+goto @label_240
+
+
+@label_240:
+unk041c 0, 128, 247, 1
+jumpz @label_312, (s16)gUnk_0300657C[255] == 51
+unk041c 1, 128, 247, 3
+goto @label_312
+
+
+@label_312:
+mapev 0, @label_398, 4
+mapevpos 0, 14, 31, 17, 31
+setvar 2, 383, 61
+unk0409 
+unk046e 16, 256, 0
+unk041d 
+unk040b 
+
+
+@label_398:
+setvar 2, 160, 32
+unk041c 17, 0, 0, 1
+unk041d 
+unk040a 
+gotomap 962
+
+
+@label_448:
+unk046c 0
+unk0006 21
+unk046c 1
+unk040b 
+
+
+@label_474:
+setvar 2, 160, 63
+unk040a 
+unk034f 
+goto @label_0
+done 
+unk031a 7
+unk031b 7, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 7, 1
+unk031f 7
+ret 
+unk031b 7, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 7, 2
+unk031f 7
+unk031a 7
+ret 
+unk031a 7
+unk031b 7, 65535 - (s16)gUnk_0300657C[75], (s16)gUnk_0300657C[76], (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 7, 1
+unk031f 7
+ret 
+unk031a 6
+unk031b 6, (s16)gUnk_0300657C[75], 0, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 6, 1
+unk031f 6
+ret 
+unk031b 7, 65535 - (s16)gUnk_0300657C[75], (s16)gUnk_0300657C[76], (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 7, 2
+unk031f 7
+unk031a 7
+ret 
+unk031b 6, (s16)gUnk_0300657C[75], 0, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 6, 2
+unk031f 6
+unk031a 6
+ret 
+unk031a 7
+unk031b 7, 65535, 65535, (s16)gUnk_0300657C[77], (s16)gUnk_0300657C[73]
+unk031c 7, 1
+unk040d 15
+unk031a 6
+unk031b 6, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 6, 1
+unk031f 6
+unk031a 7
+unk031b 6, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73] / 2
+unk031c 6, 2
+unk031f 6
+unk031a 6
+ret 
+unk031a 7
+unk031b 7, 65535, 65535, (s16)gUnk_0300657C[77], (s16)gUnk_0300657C[73]
+unk031c 7, 1
+unk040d 15
+unk031a 6
+unk031b 6, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73]
+unk031c 6, 1
+unk031f 6
+unk031a 7
+ret 
+unk031b 6, 65535, 65535, (s16)gUnk_0300657C[72], (s16)gUnk_0300657C[73] / 2
+unk031c 6, 2
+unk031f 6
+unk031a 6
+ret 
+jumpz @label_1336, (s16)gUnk_0300657C[67] == 0
+setvar 2, 203, (s16)gUnk_0300657C[75] | 1
+goto @label_1906
+
+
+@label_1336:
+jumpz @label_1374, (s16)gUnk_0300657C[67] == 1
+setvar 2, 203, (s16)gUnk_0300657C[75] | 2
+goto @label_1906
+
+
+@label_1374:
+jumpz @label_1412, (s16)gUnk_0300657C[67] == 2
+setvar 2, 203, (s16)gUnk_0300657C[75] | 4
+goto @label_1906
+
+
+@label_1412:
+jumpz @label_1450, (s16)gUnk_0300657C[67] == 3
+setvar 2, 203, (s16)gUnk_0300657C[75] | 8
+goto @label_1906
+
+
+@label_1450:
+jumpz @label_1488, (s16)gUnk_0300657C[67] == 4
+setvar 2, 203, (s16)gUnk_0300657C[75] | 16
+goto @label_1906
+
+
+@label_1488:
+jumpz @label_1526, (s16)gUnk_0300657C[67] == 5
+setvar 2, 203, (s16)gUnk_0300657C[75] | 32
+goto @label_1906
+
+
+@label_1526:
+jumpz @label_1564, (s16)gUnk_0300657C[67] == 6
+setvar 2, 203, (s16)gUnk_0300657C[75] | 64
+goto @label_1906
+
+
+@label_1564:
+jumpz @label_1602, (s16)gUnk_0300657C[67] == 7
+setvar 2, 203, (s16)gUnk_0300657C[75] | 128
+goto @label_1906
+
+
+@label_1602:
+jumpz @label_1640, (s16)gUnk_0300657C[67] == 8
+setvar 2, 203, (s16)gUnk_0300657C[75] | 256
+goto @label_1906
+
+
+@label_1640:
+jumpz @label_1678, (s16)gUnk_0300657C[67] == 9
+setvar 2, 203, (s16)gUnk_0300657C[75] | 512
+goto @label_1906
+
+
+@label_1678:
+jumpz @label_1716, (s16)gUnk_0300657C[67] == 10
+setvar 2, 203, (s16)gUnk_0300657C[75] | 1024
+goto @label_1906
+
+
+@label_1716:
+jumpz @label_1754, (s16)gUnk_0300657C[67] == 11
+setvar 2, 203, (s16)gUnk_0300657C[75] | 2048
+goto @label_1906
+
+
+@label_1754:
+jumpz @label_1792, (s16)gUnk_0300657C[67] == 12
+setvar 2, 203, (s16)gUnk_0300657C[75] | 4096
+goto @label_1906
+
+
+@label_1792:
+jumpz @label_1830, (s16)gUnk_0300657C[67] == 13
+setvar 2, 203, (s16)gUnk_0300657C[75] | 8192
+goto @label_1906
+
+
+@label_1830:
+jumpz @label_1868, (s16)gUnk_0300657C[67] == 14
+setvar 2, 203, (s16)gUnk_0300657C[75] | 16384
+goto @label_1906
+
+
+@label_1868:
+jumpz @label_1906, (s16)gUnk_0300657C[67] == 15
+setvar 2, 203, (s16)gUnk_0300657C[75] | 32768
+goto @label_1906
+
+
+@label_1906:
+ret 
+unk046d 0, 192
+unk043e 0, 6, 0
+walkto 0, (s16)gUnk_0300657C[64], (s16)gUnk_0300657C[65] - 8, 1
+walkwait 0
+ret 
+unk046d 0, 192
+unk043e 0, 6, 0
+walkto 0, (s16)gUnk_0300657C[64], (s16)gUnk_0300657C[65] + 8, 1
+walkwait 0
+ret 
+unk046d 0, 192
+unk043e 0, 6, 0
+walkto 0, (s16)gUnk_0300657C[64] - 8, (s16)gUnk_0300657C[65], 1
+walkwait 0
+ret 
+unk046d 0, 192
+unk043e 0, 6, 0
+walkto 0, (s16)gUnk_0300657C[64] + 8, (s16)gUnk_0300657C[65], 1
+walkwait 0
+ret 
+unk033a 196, 0
+unk048e 
+unk031a 7
+unk031b 7, 65535, 65535, 32767, 6
+unk031c 7, 1
+unk031f 7
+unk0443 0, 48, 0
+unk043d 0, (s16)gUnk_0300657C[128], (s16)gUnk_0300657C[129]
+unk0443 0, 48, 1
+unk031b 7, 65535, 65535, 32767, 6
+unk031c 7, 2
+unk031f 7
+unk031a 7
+unk033e 196
+ret 
+
+
+@label_2422:
+unk0438 16, 383, 638, 1
+unk043a 16, 16, 0
+unk043d 16, 144, 64
+unk043c 16, 1
+unk0442 16, @label_2528
+unk0444 16, 65535
+ret 
+
+
+@label_2528:
+setvar 3, 63, 4
+unk0006 3916
+unk040b 
