@@ -1,0 +1,1245 @@
+opcodes:
+  '0x0001':
+    name: setvar
+    parameters:
+    - type: imm16
+    - type: imm16
+    - type: expr
+  '0x0002':
+    name: jumpz
+    parameters:
+    - type: label
+    - type: expr
+  '0x0003':
+    name: goto
+    parameters:
+    - type: label
+  '0x0004':
+    name: done
+    parameters: []
+  '0x0005':
+    name: gotomap
+    parameters:
+    - type: expr
+  '0x0006':
+    name: unk0006
+    parameters:
+    - type: expr
+  '0x0007':
+    name: call
+    parameters:
+    - type: label
+  '0x0008':
+    name: ret
+    parameters: []
+  '0x000D':
+    name: unk000d
+    parameters: []
+  '0x0100':
+    name: unk0100
+    parameters: []
+  '0x0101':
+    name: unk0101
+    parameters: []
+  '0x0108':
+    name: unk0108
+    parameters: []
+  '0x0109':
+    name: unk0109
+    parameters: []
+  '0x010C':
+    name: unk010c
+    parameters: []
+  '0x010D':
+    name: unk010d
+    parameters: []
+  '0x0110':
+    name: unk0110
+    parameters: []
+  '0x0111':
+    name: unk0111
+    parameters: []
+  '0x0112':
+    name: unk0112
+    parameters: []
+  '0x0113':
+    name: unk0113
+    parameters: []
+  '0x0114':
+    name: unk0114
+    parameters: []
+  '0x0115':
+    name: unk0115
+    parameters:
+    - type: expr
+  '0x0200':
+    name: unk0200
+    parameters: []
+  '0x0201':
+    name: unk0201
+    parameters: []
+  '0x0203':
+    name: unk0203
+    parameters:
+    - type: imm16
+  '0x0204':
+    name: unk0204
+    parameters:
+    - type: expr
+  '0x0208':
+    name: unk0208
+    parameters:
+    - type: expr
+  '0x020A':
+    name: unk020a
+    parameters:
+    - type: expr
+    - type: expr
+  '0x020B':
+    name: unk020b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x020C':
+    name: unk020c
+    parameters: []
+  '0x020D':
+    name: unk020d
+    parameters:
+    - type: expr
+    - type: expr
+  '0x020E':
+    name: unk020e
+    parameters: []
+  '0x020F':
+    name: unk020f
+    parameters: []
+  '0x0210':
+    name: unk0210
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0211':
+    name: unk0211
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0212':
+    name: unk0212
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0213':
+    name: unk0213
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0214':
+    name: unk0214
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0216':
+    name: unk0216
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0217':
+    name: unk0217
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x021B':
+    name: unk021b
+    parameters:
+    - type: expr
+  '0x0220':
+    name: unk0220
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0221':
+    name: unk0221
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0222':
+    name: unk0222
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0223':
+    name: unk0223
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0224':
+    name: unk0224
+    parameters:
+    - type: expr
+  '0x0225':
+    name: unk0225
+    parameters:
+    - type: expr
+  '0x0226':
+    name: unk0226
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0229':
+    name: unk0229
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x022B':
+    name: unk022b
+    parameters: []
+  '0x022C':
+    name: unk022c
+    parameters:
+    - type: expr
+  '0x022E':
+    name: unk022e
+    parameters: []
+  '0x022F':
+    name: unk022f
+    parameters:
+    - type: expr
+  '0x0230':
+    name: unk0230
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0231':
+    name: unk0231
+    parameters: []
+  '0x0232':
+    name: unk0232
+    parameters:
+    - type: expr
+  '0x0238':
+    name: unk0238
+    parameters:
+    - type: expr
+  '0x0239':
+    name: unk0239
+    parameters:
+    - type: expr
+  '0x023A':
+    name: unk023a
+    parameters: []
+  '0x023B':
+    name: unk023b
+    parameters:
+    - type: expr
+  '0x0240':
+    name: unk0240
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0241':
+    name: unk0241
+    parameters: []
+  '0x0242':
+    name: unk0242
+    parameters: []
+  '0x0244':
+    name: unk0244
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0245':
+    name: unk0245
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0246':
+    name: unk0246
+    parameters:
+    - type: expr
+  '0x0248':
+    name: unk0248
+    parameters: []
+  '0x024A':
+    name: unk024a
+    parameters: []
+  '0x024B':
+    name: unk024b
+    parameters: []
+  '0x0250':
+    name: unk0250
+    parameters: []
+  '0x0251':
+    name: unk0251
+    parameters:
+    - type: expr
+  '0x0300':
+    name: unk0300
+    parameters: []
+  '0x0301':
+    name: unk0301
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0302':
+    name: unk0302
+    parameters:
+    - type: expr
+  '0x0303':
+    name: unk0303
+    parameters: []
+  '0x0304':
+    name: unk0304
+    parameters:
+    - type: expr
+  '0x0305':
+    name: unk0305
+    parameters:
+    - type: expr
+  '0x0307':
+    name: setname
+    parameters:
+    - type: expr
+    - type: str
+      char_max: 0
+      half_max: 9
+  '0x0308':
+    name: dialogtxt
+    parameters:
+    - type: str
+      char_max: 0
+      half_max: 20
+  '0x0309':
+    name: pausedialog #暂停对话
+    parameters: []
+  '0x030A':
+    name: unk030a
+    parameters:
+    - type: expr
+    - type: expr
+  '0x030B':
+    name: dialogbig
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: str
+      char_max: 32
+  '0x030C':
+    name: unk030c
+    parameters: []
+  '0x030D':
+    name: choicetxt
+    parameters:
+    - type: label
+    - type: str
+      char_max: 0
+      half_max: 0
+  '0x030E':
+    name: choicewait
+    parameters: []
+  '0x0311':
+    name: menutitle
+    parameters:
+    - type: str
+      char_max: 0
+      half_max: 0
+  '0x0312':
+    name: unk0312
+    parameters: []
+  '0x0313':
+    name: unk0313
+    parameters:
+    - type: label
+  '0x0314':
+    name: menutxt
+    parameters:
+    - type: label
+    - type: str
+      char_max: 0
+      half_max: 0
+  '0x0315':
+    name: menuwait
+    parameters: []
+  '0x0316':
+    name: strlen
+    parameters:
+    - type: expr
+    - type: str
+      char_max: 0
+      half_max: 0
+  '0x0317':
+    name: popuptxt
+    parameters:
+    - type: str
+      char_max: 0
+      half_max: 0
+  '0x0318':
+    name: unk0318
+    parameters: []
+  '0x031A':
+    name: unk031a
+    parameters:
+    - type: expr
+  '0x031B':
+    name: unk031b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x031C':
+    name: unk031c
+    parameters:
+    - type: expr
+    - type: expr
+  '0x031D':
+    name: unk031d
+    parameters:
+    - type: expr
+    - type: expr
+  '0x031F':
+    name: unk031f
+    parameters:
+    - type: expr
+  '0x0320':
+    name: unk0320
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0321':
+    name: unk0321
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0323':
+    name: unk0323
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0324':
+    name: unk0324
+    parameters:
+    - type: expr
+    - type: expr
+  '0x032F':
+    name: unk032f
+    parameters: []
+  '0x0330':
+    name: unk0330
+    parameters: []
+  '0x0331':
+    name: unk0331
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0332':
+    name: unk0332
+    parameters: []
+  '0x0333':
+    name: unk0333
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0334':
+    name: unk0334
+    parameters: []
+  '0x033A':
+    name: unk033a
+    parameters:
+    - type: expr
+    - type: expr
+  '0x033B':
+    name: unk033b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x033C':
+    name: unk033c
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x033D':
+    name: unk033d
+    parameters:
+    - type: expr
+  '0x033E':
+    name: unk033e
+    parameters:
+    - type: expr
+  '0x0345':
+    name: unk0345
+    parameters: []
+  '0x0346':
+    name: unk0346
+    parameters: []
+  '0x0347':
+    name: unk0347
+    parameters: []
+  '0x0348':
+    name: unk0348
+    parameters: []
+  '0x0349':
+    name: unk0349
+    parameters: []
+  '0x034A':
+    name: unk034a
+    parameters: []
+  '0x034B':
+    name: unk034b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x034C':
+    name: unk034c
+    parameters: []
+  '0x034D':
+    name: unk034d
+    parameters: []
+  '0x034E':
+    name: unk034e
+    parameters: []
+  '0x034F':
+    name: unk034f
+    parameters: []
+  '0x0350':
+    name: unk0350
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0351':
+    name: unk0351
+    parameters: []
+  '0x0352':
+    name: unk0352
+    parameters: []
+  '0x0353':
+    name: unk0353
+    parameters:
+    - type: expr
+  '0x0354':
+    name: unk0354
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0355':
+    name: unk0355
+    parameters: []
+  '0x0356':
+    name: unk0356
+    parameters: []
+  '0x0357':
+    name: unk0357
+    parameters: []
+  '0x0358':
+    name: unk0358
+    parameters: []
+  '0x0359':
+    name: unk0359
+    parameters:
+    - type: expr
+  '0x035A':
+    name: unk035a
+    parameters: []
+  '0x035B':
+    name: unk035b
+    parameters:
+    - type: expr
+  '0x035C':
+    name: unk035c
+    parameters: []
+  '0x035D':
+    name: unk035d
+    parameters: []
+  '0x035E':
+    name: unk035e
+    parameters:
+    - type: expr
+  '0x0361':
+    name: unk0361
+    parameters:
+    - type: expr
+  '0x0362':
+    name: unk0362
+    parameters:
+    - type: expr
+  '0x0363':
+    name: placetxt
+    parameters:
+    - type: str
+      char_max: 0
+      half_max: 19
+  '0x0364':
+    name: unk0364
+    parameters:
+    - type: expr
+  '0x0365':
+    name: unk0365
+    parameters: []
+  '0x0366':
+    name: unk0366
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0367':
+    name: unk0367
+    parameters: []
+  '0x0368':
+    name: unk0368
+    parameters: []
+  '0x0369':
+    name: unk0369
+    parameters: []
+  '0x036A':
+    name: unk036a
+    parameters:
+    - type: expr
+  '0x036C':
+    name: unk036c
+    parameters:
+    - type: expr
+    - type: expr
+  '0x036D':
+    name: unk036d
+    parameters: []
+  '0x036E':
+    name: unk036e
+    parameters: []
+  '0x036F':
+    name: unk036f
+    parameters: []
+  '0x0370':
+    name: unk0370
+    parameters: []
+  '0x0374':
+    name: unk0374
+    parameters:
+    - type: expr
+  '0x0375':
+    name: unk0375
+    parameters:
+    - type: expr
+  '0x0376':
+    name: unk0376
+    parameters:
+    - type: expr
+  '0x0377':
+    name: unk0377
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0379':
+    name: unk0379
+    parameters:
+    - type: expr
+  '0x037A':
+    name: unk037a
+    parameters: []
+  '0x037B':
+    name: unk037b
+    parameters:
+    - type: expr
+    - type: expr
+  '0x037C':
+    name: unk037c
+    parameters:
+    - type: expr
+  '0x037F':
+    name: unk037f
+    parameters:
+    - type: expr
+  '0x0380':
+    name: unk0380
+    parameters:
+    - type: expr
+  '0x0381':
+    name: unk0381
+    parameters:
+    - type: expr
+  '0x0382':
+    name: unk0382
+    parameters:
+    - type: expr
+  '0x0387':
+    name: unk0387
+    parameters:
+    - type: expr
+  '0x0388':
+    name: unk0388
+    parameters:
+    - type: expr
+  '0x0389':
+    name: unk0389
+    parameters: []
+  '0x038A':
+    name: unk038a
+    parameters: []
+  '0x038B':
+    name: unk038b
+    parameters: []
+  '0x038C':
+    name: unk038c
+    parameters:
+    - type: expr
+  '0x038D':
+    name: unk038d
+    parameters:
+    - type: expr
+  '0x038E':
+    name: unk038e
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0400':
+    name: unk0400
+    parameters: []
+  '0x0401':
+    name: unk0401
+    parameters: []
+  '0x0408':
+    name: unk0408
+    parameters:
+    - type: expr
+  '0x0409':
+    name: unk0409
+    parameters: []
+  '0x040A':
+    name: unk040a
+    parameters: []
+  '0x040B':
+    name: unk040b
+    parameters: []
+  '0x040C':
+    name: unk040c
+    parameters:
+    - type: expr
+    - type: label
+  '0x040D':
+    name: unk040d
+    parameters:
+    - type: expr
+  '0x0410':
+    name: unk0410
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0411':
+    name: unk0411
+    parameters: []
+  '0x0412':
+    name: unk0412
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0414':
+    name: unk0414
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0415':
+    name: unk0415
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0416':
+    name: unk0416
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0418':
+    name: unk0418
+    parameters:
+    - type: expr
+  '0x0419':
+    name: unk0419
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x041A':
+    name: unk041a
+    parameters:
+    - type: expr
+    - type: expr
+  '0x041B':
+    name: unk041b
+    parameters:
+    - type: expr
+  '0x041C':
+    name: unk041c
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x041D':
+    name: unk041d
+    parameters: []
+  '0x0420':
+    name: unk0420
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0421':
+    name: unk0421
+    parameters:
+    - type: expr
+  '0x0422':
+    name: unk0422
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0424':
+    name: unk0424
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0426':
+    name: unk0426
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0428':
+    name: unk0428
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0430':
+    name: unk0430
+    parameters:
+    - type: expr
+  '0x0431':
+    name: unk0431
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0432':
+    name: unk0432
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0438':
+    name: unk0438
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0439':
+    name: unk0439
+    parameters:
+    - type: expr
+  '0x043A':
+    name: unk043a
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x043B':
+    name: unk043b
+    parameters:
+    - type: expr
+  '0x043C':
+    name: unk043c
+    parameters:
+    - type: expr
+    - type: expr
+  '0x043D':
+    name: unk043d
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x043E':
+    name: unk043e
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x043F':
+    name: unk043f
+    parameters:
+    - type: expr
+  '0x0440':
+    name: walkto
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0441':
+    name: walkwait
+    parameters:
+    - type: expr
+  '0x0442':
+    name: unk0442
+    parameters:
+    - type: expr
+    - type: label
+  '0x0443':
+    name: unk0443
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0444':
+    name: unk0444
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0445':
+    name: unk0445
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0446':
+    name: unk0446
+    parameters:
+    - type: expr
+  '0x0447':
+    name: unk0447
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0448':
+    name: unk0448
+    parameters:
+    - type: expr
+    - type: expr
+  '0x044A':
+    name: unk044a
+    parameters:
+    - type: expr
+  '0x0450':
+    name: unk0450
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0451':
+    name: unk0451
+    parameters:
+    - type: expr
+  '0x0452':
+    name: unk0452
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0453':
+    name: unk0453
+    parameters:
+    - type: expr
+    - type: label
+    - type: expr
+  '0x0457':
+    name: unk0457
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0458':
+    name: unk0458
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0460':
+    name: mapev
+    parameters:
+    - type: expr
+    - type: label
+    - type: expr
+  '0x0461':
+    name: unk0461
+    parameters:
+    - type: expr
+  '0x0462':
+    name: mapevpos
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0468':
+    name: unk0468
+    parameters:
+    - type: expr
+  '0x046C':
+    name: unk046c
+    parameters:
+    - type: expr
+  '0x046D':
+    name: unk046d
+    parameters:
+    - type: expr
+    - type: expr
+  '0x046E':
+    name: unk046e
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x046F':
+    name: unk046f
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0470':
+    name: unk0470
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0471':
+    name: unk0471
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0472':
+    name: unk0472
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0473':
+    name: unk0473
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0475':
+    name: unk0475
+    parameters: []
+  '0x0476':
+    name: unk0476
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0478':
+    name: setcg #设置对话框人物大头贴
+    parameters:
+    - type: expr #设置左/右侧
+    - type: expr #大头贴id
+  '0x0479':
+    name: setemoji #设置角色对话框表情
+    parameters:
+    - type: expr #设置左/右侧人物，0左1右
+    - type: expr #眼睛id
+    - type: expr #嘴巴id
+  '0x047A':
+    name: unk047a
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x047B':
+    name: unk047b
+    parameters: []
+  '0x047C':
+    name: unk047c
+    parameters:
+    - type: expr
+    - type: expr
+  '0x047D':
+    name: unk047d
+    parameters:
+    - type: expr
+    - type: expr
+  '0x047E':
+    name: unk047e
+    parameters:
+    - type: expr
+    - type: expr
+  '0x047F':
+    name: unk047f
+    parameters:
+    - type: expr
+  '0x0480':
+    name: unk0480
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x0481':
+    name: unk0481
+    parameters:
+    - type: expr
+  '0x0482':
+    name: unk0482
+    parameters: []
+  '0x0488':
+    name: unk0488
+    parameters:
+    - type: expr
+    - type: expr
+  '0x0489':
+    name: unk0489
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x048A':
+    name: unk048a
+    parameters:
+    - type: expr
+    - type: expr
+  '0x048B':
+    name: unk048b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x048C':
+    name: unk048c
+    parameters: []
+  '0x048D':
+    name: unk048d
+    parameters:
+    - type: expr
+    - type: expr
+  '0x048E':
+    name: unk048e
+    parameters: []
+  '0x048F':
+    name: unk048f
+    parameters:
+    - type: expr
+  '0x0490':
+    name: unk0490
+    parameters:
+    - type: expr
+  '0x0491':
+    name: unk0491
+    parameters:
+    - type: expr
+  '0x0492':
+    name: unk0492
+    parameters: []
+  '0x0493':
+    name: unk0493
+    parameters: []
+  '0x0498':
+    name: unk0498
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x049A':
+    name: unk049a
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x049B':
+    name: unk049b
+    parameters:
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+    - type: expr
+  '0x049C':
+    name: unk049c
+    parameters:
+    - type: expr
+  '0x04A0':
+    name: unk04a0
+    parameters: []
+  '0x04A1':
+    name: unk04a1
+    parameters: []
+  '0x04A2':
+    name: unk04a2
+    parameters: []
+  '0x04A3':
+    name: unk04a3
+    parameters: []
+  '0x04A4':
+    name: unk04a4
+    parameters: []
+
