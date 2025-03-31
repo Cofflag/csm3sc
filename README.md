@@ -1,3 +1,5 @@
+中文说明[看这里](https://github.com/Cofflag/csm3sc/wiki)
+
 # CSM3SC
 
 This is a simple script disassembler and assembler for Summon Night Swordcraft Story 3: Stone of Beginnings (サモンナイト クラフトソード物語 はじまりの石), aka csm3.
