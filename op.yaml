@@ -15,16 +15,16 @@ opcodes:
     parameters:
     - type: label
   '0x0004':
-    name: done
+    name: done # 子脚本返回
     parameters: []
   '0x0005':
     name: gotomap
     parameters:
     - type: expr
   '0x0006':
-    name: unk0006
+    name: callsubscript # 调用子脚本
     parameters:
-    - type: expr
+    - type: expr # 脚本文件id
   '0x0007':
     name: call
     parameters:
@@ -324,10 +324,10 @@ opcodes:
     name: unk0300
     parameters: []
   '0x0301':
-    name: unk0301
+    name: setdialogstyle # 设置对话框风格
     parameters:
-    - type: expr
-    - type: expr
+    - type: expr # 对话框上尖的个数，3为左侧，5为右侧，7为两侧，8为没有
+    - type: expr # 未知
   '0x0302':
     name: unk0302
     parameters:
@@ -360,10 +360,10 @@ opcodes:
     name: pausedialog #暂停对话
     parameters: []
   '0x030A':
-    name: unk030a
+    name: drawblackdialog # 绘制黑色对话框
     parameters:
-    - type: expr
-    - type: expr
+    - type: expr # 纵坐标
+    - type: expr # 未知，通常是1，和对话框背景色板有关
   '0x030B':
     name: dialogbig
     parameters:
@@ -375,7 +375,7 @@ opcodes:
     - type: str
       char_max: 32
   '0x030C':
-    name: unk030c
+    name: pausedialogbig # 暂停大对话框，同时在玩家按下a键时也会清除大对话框绘制到屏幕上的内容
     parameters: []
   '0x030D':
     name: choicetxt
@@ -480,10 +480,10 @@ opcodes:
     name: unk0330
     parameters: []
   '0x0331':
-    name: unk0331
+    name: playmusic # 播放音乐
     parameters:
-    - type: expr
-    - type: expr
+    - type: expr # 音乐id
+    - type: expr # 音量（0到256？）
   '0x0332':
     name: unk0332
     parameters: []
@@ -768,7 +768,7 @@ opcodes:
     name: unk040a
     parameters: []
   '0x040B':
-    name: unk040b
+    name: freeavatar # 停止执行脚本并让主角可以自由活动
     parameters: []
   '0x040C':
     name: unk040c
@@ -900,10 +900,10 @@ opcodes:
     - type: expr
     - type: expr
   '0x0438':
-    name: unk0438
+    name: mapcharanime # 地图人物动画
     parameters:
     - type: expr
-    - type: expr
+    - type: expr # 动画id（11为男主戴手铐，161为维单手撑地）
     - type: expr
     - type: expr
   '0x0439':
@@ -926,11 +926,11 @@ opcodes:
     - type: expr
     - type: expr
   '0x043D':
-    name: unk043d
+    name: mapcharpos # 地图人物坐标
     parameters:
-    - type: expr
-    - type: expr
-    - type: expr
+    - type: expr # 未知
+    - type: expr # 横坐标，左移四位后为真实值
+    - type: expr # 纵坐标，左移四位后为真实值
   '0x043E':
     name: unk043e
     parameters:
@@ -1024,23 +1024,23 @@ opcodes:
     - type: expr
     - type: expr
   '0x0460':
-    name: mapev
+    name: mapev # 声明地图事件
     parameters:
-    - type: expr
-    - type: label
-    - type: expr
+    - type: expr # 未知，可能用于与mapevpos绑定？
+    - type: label # 地图事件的偏移
+    - type: expr # 事件触发方式，4为碰撞触发，32为按下a键触发
   '0x0461':
     name: unk0461
     parameters:
     - type: expr
   '0x0462':
-    name: mapevpos
+    name: mapevpos # 定义地图事件坐标，左移七位后位真实坐标
     parameters:
-    - type: expr
-    - type: expr
-    - type: expr
-    - type: expr
-    - type: expr
+    - type: expr # 未知，可能用于与mapev绑定？
+    - type: expr # 横坐标起始
+    - type: expr # 纵坐标起始
+    - type: expr # 横坐标终止
+    - type: expr # 纵坐标终止
   '0x0468':
     name: unk0468
     parameters:
@@ -1108,11 +1108,11 @@ opcodes:
     - type: expr #眼睛id
     - type: expr #嘴巴id
   '0x047A':
-    name: unk047a
+    name: togglecg #设置对话框的大头贴是否显示
     parameters:
-    - type: expr
-    - type: expr
-    - type: expr
+    - type: expr #左/右侧
+    - type: expr #显示与否，0关闭，1显示
+    - type: expr #未知
   '0x047B':
     name: unk047b
     parameters: []
@@ -1127,10 +1127,10 @@ opcodes:
     - type: expr # 设置左/右侧
     - type: expr # 名字id
   '0x047E':
-    name: unk047e
+    name: togglename # 设置对话框上的名字是否显示
     parameters:
-    - type: expr
-    - type: expr
+    - type: expr #左/右侧
+    - type: expr #显示与否，0关闭，1显示
   '0x047F':
     name: unk047f
     parameters:
